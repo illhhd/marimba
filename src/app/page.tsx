@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { getPath } from "@/lib/utils";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -338,7 +339,7 @@ export default function Home() {
             >
               <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 relative">
                 <Image
-                  src="/images/members/sakai.jpg"
+                  src={getPath("/images/members/sakai.jpg")}
                   alt="酒井 亮輔"
                   fill
                   className="object-cover"
@@ -371,7 +372,7 @@ export default function Home() {
             >
               <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 relative">
                 <Image
-                  src="/images/members/shimada.jpg"
+                  src={getPath("/images/members/shimada.jpg")}
                   alt="島田 周"
                   fill
                   className="object-cover"
