@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -335,8 +336,14 @@ export default function Home() {
               custom={0}
               variants={fadeUp}
             >
-              <div className="w-full aspect-[3/4] rounded-2xl bg-gradient-to-br from-primary/20 to-navy-deep border border-white/10 flex items-center justify-center">
-                <span className="text-white/30 text-sm">Photo Coming Soon</span>
+              <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 relative">
+                <Image
+                  src="/images/members/sakai.jpg"
+                  alt="酒井 亮輔"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">酒井 亮輔</h3>
@@ -362,8 +369,14 @@ export default function Home() {
               custom={1}
               variants={fadeUp}
             >
-              <div className="w-full aspect-[3/4] rounded-2xl bg-gradient-to-br from-primary/20 to-navy-deep border border-white/10 flex items-center justify-center">
-                <span className="text-white/30 text-sm">Photo Coming Soon</span>
+              <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 relative">
+                <Image
+                  src="/images/members/shimada.jpg"
+                  alt="島田 周"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">島田 周</h3>
