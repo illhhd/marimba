@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MARIMBA Inc. - Typographic Flow</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#08ddac",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#10221e",
+                        "nolka-mint": "#C5F3DB",
+                        "nolka-navy": "#153644",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 20s linear infinite',
+                        'infinite-scroll-reverse': 'infinite-scroll-reverse 25s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0)' },
+                            to: { transform: 'translateX(-100%)' },
+                        },
+                        'infinite-scroll-reverse': {
+                            from: { transform: 'translateX(-100%)' },
+                            to: { transform: 'translateX(0)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #153644; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #08ddac; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #06b58d; 
+        }
+        
+        /* Utility for marquee container */
+        .marquee-container {
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+    </style>
+</head>
+<body class="bg-nolka-navy font-display text-white antialiased overflow-x-hidden">
+<!-- Sticky Nav -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 mix-blend-difference text-white">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[28px]">graphic_eq</span>
+<span class="text-xl font-bold tracking-tight">MARIMBA</span>
+</div>
+<div class="flex items-center gap-6">
+<span class="hidden md:block text-xs font-medium tracking-widest uppercase opacity-70">Global Engineering</span>
+<button class="group flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
+<span class="hidden sm:inline">Menu</span>
+<span class="material-symbols-outlined text-[24px] group-hover:rotate-90 transition-transform">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section: Kinetic Typography -->
+<header class="relative flex min-h-screen flex-col justify-center bg-nolka-mint text-nolka-navy overflow-hidden">
+<!-- Metadata Labels -->
+<div class="absolute top-24 left-6 md:left-10 text-xs font-bold tracking-widest uppercase border border-nolka-navy/30 px-3 py-1 rounded-full">
+            Est. 2024
+        </div>
+<div class="absolute bottom-10 right-6 md:right-10 text-xs font-bold tracking-widest uppercase border border-nolka-navy/30 px-3 py-1 rounded-full animate-bounce">
+            Scroll to Explore ↓
+        </div>
+<!-- Rotating Kinetic Text -->
+<div class="flex flex-col gap-0 select-none opacity-90 mix-blend-multiply">
+<div class="flex overflow-hidden whitespace-nowrap">
+<div class="animate-infinite-scroll flex gap-8 items-center">
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter">MARIMBA</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter">MARIMBA</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter">MARIMBA</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter">MARIMBA</h1>
+</div>
+<div aria-hidden="true" class="animate-infinite-scroll flex gap-8 items-center">
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter">MARIMBA</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter">MARIMBA</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter">MARIMBA</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter">MARIMBA</h1>
+</div>
+</div>
+<div class="flex overflow-hidden whitespace-nowrap mt-[-2vw]">
+<div class="animate-infinite-scroll-reverse flex gap-8 items-center">
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent stroke-2 stroke-nolka-navy" style="-webkit-text-stroke: 2px #153644;">SYSTEMS</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent stroke-2 stroke-nolka-navy" style="-webkit-text-stroke: 2px #153644;">SYSTEMS</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent stroke-2 stroke-nolka-navy" style="-webkit-text-stroke: 2px #153644;">SYSTEMS</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent stroke-2 stroke-nolka-navy" style="-webkit-text-stroke: 2px #153644;">SYSTEMS</h1>
+</div>
+<div aria-hidden="true" class="animate-infinite-scroll-reverse flex gap-8 items-center">
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent stroke-2 stroke-nolka-navy" style="-webkit-text-stroke: 2px #153644;">SYSTEMS</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent stroke-2 stroke-nolka-navy" style="-webkit-text-stroke: 2px #153644;">SYSTEMS</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent stroke-2 stroke-nolka-navy" style="-webkit-text-stroke: 2px #153644;">SYSTEMS</h1>
+<h1 class="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent stroke-2 stroke-nolka-navy" style="-webkit-text-stroke: 2px #153644;">SYSTEMS</h1>
+</div>
+</div>
+</div>
+</header>
+<!-- Introduction Section -->
+<section class="relative bg-nolka-navy px-6 py-24 md:py-40 border-t border-white/10">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-12 items-start md:items-end">
+<div class="flex-1">
+<h2 class="text-4xl md:text-7xl font-bold leading-[0.9] tracking-tight text-white mb-8">
+                    WE ENGINEER <span class="text-primary">KINETIC FLOW</span> FOR DIGITAL ECOSYSTEMS.
+                </h2>
+</div>
+<div class="flex-1 max-w-md">
+<p class="text-lg md:text-xl text-white/70 leading-relaxed">
+                    Marimba Inc. connects infrastructure with kinetic design. We build digital environments that move businesses forward through high-impact visual systems.
+                </p>
+<button class="mt-8 flex items-center gap-3 px-6 py-3 rounded-lg border border-primary text-primary hover:bg-primary hover:text-nolka-navy transition-all duration-300 font-bold tracking-wide uppercase text-sm">
+                    Our Philosophy
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Ticker Tape News -->
+<div class="bg-primary text-nolka-navy py-4 overflow-hidden border-y border-nolka-navy/20">
+<div class="flex whitespace-nowrap animate-infinite-scroll hover:[animation-play-state:paused]">
+<div class="flex items-center gap-12 px-6">
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">LATEST UPDATES <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">Q3 FINANCIAL RESULTS RELEASED <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">NEW PARTNERSHIP WITH ORION SYSTEMS <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">MARIMBA WINS DESIGN AWARD 2024 <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">EXPANDING TO TOKYO <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+</div>
+<div aria-hidden="true" class="flex items-center gap-12 px-6">
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">LATEST UPDATES <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">Q3 FINANCIAL RESULTS RELEASED <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">NEW PARTNERSHIP WITH ORION SYSTEMS <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">MARIMBA WINS DESIGN AWARD 2024 <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+<span class="text-2xl font-bold tracking-tight uppercase flex items-center gap-4">EXPANDING TO TOKYO <span class="size-2 bg-nolka-navy rounded-full"></span></span>
+</div>
+</div>
+</div>
+<!-- Services Grid: Typographic -->
+<section class="bg-nolka-navy px-6 py-24 border-b border-white/10">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16 border-b border-white/10 pb-4">
+<h3 class="text-sm font-medium uppercase tracking-[0.2em] text-white/50">Core Services</h3>
+<span class="text-sm font-medium uppercase tracking-[0.2em] text-white/50">01 — 03</span>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Service 01 -->
+<div class="group relative flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-white/10 transition-colors hover:border-primary cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"></div>
+<div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-16 pl-6">
+<span class="text-primary font-mono text-xl">01</span>
+<h2 class="text-5xl md:text-8xl font-black text-white group-hover:text-primary transition-colors tracking-tighter">STRATEGY</h2>
+</div>
+<div class="mt-6 md:mt-0 max-w-sm pl-6 md:pl-0">
+<p class="text-white/60 group-hover:text-white transition-colors text-lg leading-snug">
+                            Corporate alignment and future-proofing your digital infrastructure for the next decade.
+                        </p>
+<div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-primary text-4xl">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="group relative flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-white/10 transition-colors hover:border-primary cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"></div>
+<div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-16 pl-6">
+<span class="text-primary font-mono text-xl">02</span>
+<h2 class="text-5xl md:text-8xl font-black text-white group-hover:text-primary transition-colors tracking-tighter">DESIGN</h2>
+</div>
+<div class="mt-6 md:mt-0 max-w-sm pl-6 md:pl-0">
+<p class="text-white/60 group-hover:text-white transition-colors text-lg leading-snug">
+                            High-impact visual systems that communicate authority and innovation at scale.
+                        </p>
+<div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-primary text-4xl">arrow_outward</span>
+</div>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="group relative flex flex-col md:flex-row md:items-center justify-between py-12 border-b border-white/10 transition-colors hover:border-primary cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"></div>
+<div class="flex flex-col md:flex-row md:items-baseline gap-4 md:gap-16 pl-6">
+<span class="text-primary font-mono text-xl">03</span>
+<h2 class="text-5xl md:text-8xl font-black text-white group-hover:text-primary transition-colors tracking-tighter">DEVELOPMENT</h2>
+</div>
+<div class="mt-6 md:mt-0 max-w-sm pl-6 md:pl-0">
+<p class="text-white/60 group-hover:text-white transition-colors text-lg leading-snug">
+                            Scalable technical architecture built to handle millions of interactions seamlessly.
+                        </p>
+<div class="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-primary text-4xl">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Image/Visual Break -->
+<section class="w-full h-[60vh] bg-cover bg-fixed bg-center relative group" data-alt="Abstract view of earth from space with glowing network lines representing global connectivity" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfPBuHXYPXdttb8JFvUAdVv0I4RRdnChdkOUdHLSd-c4Je4EL8CJ_pk937L8La58xCWP423saw6rI-d2x9XvhwJTpwhybr3WBGmmApcQO6d_Tk3BW7rkdbba3WkxN0njbuR69xlsJK8jmtiK_AXVrWFgr8THhYe6MTEwVR2opOwv7fxGAVY6p-PQEEjf8cuIYvbfb5-MXkXKck_hIdDaAkn7WY8Qiz5ObnI5INyw5Fx2cvn6V5Fh1mA9WhU1pKOMeQxC34u8Ub8Nc');">
+<div class="absolute inset-0 bg-nolka-navy/60 group-hover:bg-nolka-navy/40 transition-colors duration-500"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="border border-white/20 bg-nolka-navy/80 backdrop-blur-sm p-8 md:p-12 rounded-xl text-center max-w-2xl mx-4">
+<h2 class="text-3xl md:text-5xl font-bold mb-4">GLOBAL REACH</h2>
+<p class="text-white/70 mb-8">Connecting nodes across 4 continents.</p>
+<button class="bg-primary text-nolka-navy px-6 py-3 rounded-lg font-bold hover:bg-white transition-colors">VIEW NETWORK MAP</button>
+</div>
+</div>
+</section>
+<!-- Footer: Massive Contact -->
+<footer class="bg-nolka-navy pt-24 pb-12 px-6 border-t border-white/10">
+<div class="max-w-7xl mx-auto flex flex-col h-full">
+<div class="flex flex-col gap-8 mb-24">
+<span class="text-sm font-medium uppercase tracking-[0.2em] text-primary">Start a project</span>
+<a class="text-[8vw] md:text-[9vw] font-black leading-none tracking-tighter text-white hover:text-primary transition-colors break-words w-full" href="mailto:hello@marimba.inc">
+                    HELLO@MARIMBA.INC
+                </a>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 border-t border-white/10 pt-12">
+<div class="flex flex-col gap-4">
+<h4 class="text-lg font-bold text-white">MARIMBA HQ</h4>
+<address class="not-italic text-white/60">
+                        1294 Kinetic Way, Floor 4<br/>
+                        San Francisco, CA 94103<br/>
+                        United States
+                    </address>
+</div>
+<div class="flex flex-wrap gap-8 md:gap-16">
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold uppercase tracking-widest text-white/40">Social</span>
+<div class="flex gap-4">
+<a class="text-white hover:text-primary" href="#">LinkedIn</a>
+<a class="text-white hover:text-primary" href="#">Twitter</a>
+<a class="text-white hover:text-primary" href="#">Instagram</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-xs font-bold uppercase tracking-widest text-white/40">Legal</span>
+<div class="flex gap-4">
+<a class="text-white/60 hover:text-white" href="#">Privacy</a>
+<a class="text-white/60 hover:text-white" href="#">Terms</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-24 flex justify-between items-center text-xs text-white/30 uppercase tracking-widest">
+<span>© 2024 MARIMBA INC.</span>
+<span>NOLKA VARIANT 03</span>
+</div>
+</div>
+</footer>
+</body></html>
