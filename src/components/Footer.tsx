@@ -11,9 +11,9 @@ export default function Footer() {
                     </span>
                     <a
                         className="text-[6vw] md:text-[5vw] font-black leading-none tracking-tighter text-white hover:text-primary transition-colors break-words w-full"
-                        href="mailto:hello@marimba.co.jp"
+                        href="mailto:contact@marimba.co.jp"
                     >
-                        HELLO@MARIMBA.CO.JP
+                        contact@marimba.co.jp
                     </a>
                 </div>
 
@@ -27,25 +27,7 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-wrap gap-8 md:gap-16">
-                        <div className="flex flex-col gap-4">
-                            <span className="text-xs font-bold uppercase tracking-widest text-white/40">
-                                Links
-                            </span>
-                            <div className="flex gap-4">
-                                <a
-                                    className="text-white/60 hover:text-primary transition-colors text-sm"
-                                    href="#"
-                                >
-                                    Podcast
-                                </a>
-                                <a
-                                    className="text-white/60 hover:text-primary transition-colors text-sm"
-                                    href="#"
-                                >
-                                    Note
-                                </a>
-                            </div>
-                        </div>
+
                         <div className="flex flex-col gap-4">
                             <span className="text-xs font-bold uppercase tracking-widest text-white/40">
                                 Legal

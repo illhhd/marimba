@@ -22,10 +22,7 @@ export default function Home() {
 
       {/* ─── Hero Section ─── */}
       <header className="relative flex min-h-screen flex-col justify-center bg-mint text-navy overflow-hidden">
-        {/* Badge */}
-        <div className="absolute top-24 left-6 md:left-10 text-xs font-bold tracking-widest uppercase border border-navy/30 px-3 py-1 rounded-full">
-          Est. 2025
-        </div>
+
         <div className="absolute bottom-10 right-6 md:right-10 text-xs font-bold tracking-widest uppercase border border-navy/30 px-3 py-1 rounded-full animate-bounce">
           Scroll to Explore ↓
         </div>
