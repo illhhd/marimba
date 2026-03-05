@@ -45,7 +45,7 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-24 flex justify-between items-center text-xs text-white/30 uppercase tracking-widest">
-                    <span>© 2025 MARIMBA Inc.</span>
+                    <span>© 2026 MARIMBA Inc.</span>
                 </div>
             </div>
         </footer>

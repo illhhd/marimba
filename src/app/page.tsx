@@ -28,29 +28,34 @@ export default function Home() {
         </div>
 
         {/* Kinetic marquee text */}
-        <div className="flex flex-col gap-0 select-none opacity-90 mix-blend-multiply">
+        <div className="flex flex-col gap-0 select-none opacity-90">
           <div className="flex overflow-hidden whitespace-nowrap">
             <div className="animate-scroll-left flex gap-8 items-center">
               {[...Array(6)].map((_, i) => (
-                <h1
-                  key={i}
-                  className="text-[18vw] font-black leading-[0.85] tracking-tighter"
-                >
-                  MARIMBA
-                </h1>
+                <div key={i} className="relative h-[12vw] w-[45vw]">
+                  <Image
+                    src={getPath("/images/logo-black.png")}
+                    alt="MARIMBA"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
               ))}
             </div>
           </div>
           <div className="flex overflow-hidden whitespace-nowrap mt-[-2vw]">
             <div className="animate-scroll-right flex gap-8 items-center">
               {[...Array(6)].map((_, i) => (
-                <h1
-                  key={i}
-                  className="text-[18vw] font-black leading-[0.85] tracking-tighter text-transparent"
-                  style={{ WebkitTextStroke: "2px #10221e" }}
-                >
-                  MARIMBA
-                </h1>
+                <div key={i} className="relative h-[12vw] w-[45vw]">
+                  <Image
+                    src={getPath("/images/logo-white.png")}
+                    alt="MARIMBA"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
               ))}
             </div>
           </div>

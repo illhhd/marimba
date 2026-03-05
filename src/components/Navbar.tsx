@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { getPath } from "@/lib/utils";
+import Image from "next/image";
+
 const navLinks = [
     { label: "Service", href: "#service" },
     { label: "Expertise", href: "#expertise" },
@@ -32,9 +35,15 @@ export default function Navbar() {
                     }`}
             >
                 <Link href="/" className="flex items-center gap-2 group">
-                    <span className="text-xl font-bold tracking-tight text-white group-hover:text-primary transition-colors">
-                        MARIMBA
-                    </span>
+                    <div className="relative h-8 w-32">
+                        <Image
+                            src={getPath("/images/logo-white.png")}
+                            alt="MARIMBA"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
                 </Link>
 
                 <div className="flex items-center gap-6">
